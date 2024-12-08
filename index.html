@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloPagina1">Portfolio de Rafa</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/comun.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section id="testimonial">
+        <div class="gradient-background">
+            
+            <!--language-->
+            <button class="nav-link languageButton idiom" id="spanishButton" onclick="cambiarIdioma('es')"><img src="./images/bandera.png" height="40px" alt="español"/><div class="hideText">spanish</div></button>
+            <button class="nav-link languageButton idiom" id="englishButton" onclick="cambiarIdioma('en')"><img src="./images/reino-unido.png" height="38px" alt="english"/><div class="hideText">english</div></button>
+
+            <div class="p-5 text-center gradient-background">
+                <div class="container py-5">
+                    <img class="profile-img mt-5" src="./images/profilepic.jpg" alt="profile pic"/>
+                    <p id= "miNombre" class="col-lg-8 mx-auto lead mt-5">
+                        <a href="aboutme.html" class="link-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover">                        
+                            Rafael Sánchez Solaeche
+                            <img class="iconoEnlace" style="white-space: nowrap;" src="./images/box-arrow-up-right.svg" alt="ayuda visual enlace" height="15"/>
+                        </a>
+                    </p>
+                    
+                    <p class="col-lg-8 mx-auto lead mt-2 languageContent esp colorLetra" data-lang="spanish">
+                        Ingeniero biomédico y desarrollador full stack
+                    </p>
+                    <p class="col-lg-8 mx-auto lead mt-2 languageContent en colorLetra" data-lang="english">
+                        Biomedical engineer and full stack developer
+                    </p>
+                    <div id="opciones">
+                        <a href="./studies.html" class="link-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover languageContent esp" data-lang="spanish">                        
+                            <img src="./images/mortarboard.svg" alt="estudios" height="36"/>
+                            Estudios                   
+                         </a>
+                         <a href="./studies.html" class="link-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover languageContent en" data-lang="english">                        
+                            <img src="./images/mortarboard.svg" alt="studies" height="36"/>
+                            Studies                   
+                         </a>
+                        <a href="mailto:rafaelsanchezsolaeche@gmail.com?Subject=Queremos%20concertar%20una%20entrevista" class="link-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover languageContent esp" data-lang="spanish">
+                            <img src="./images/envelope-at.svg" alt="contacto" height="36"/>
+                            Contacto
+                        </a>
+                        <a href="mailto:rafaelsanchezsolaeche@gmail.com?Subject=We%20would%20like%20to%20arrange%20an%20interview" class="link-light link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover languageContent en" data-lang="english">
+                            <img src="./images/envelope-at.svg" alt="contact me" height="36"/>
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </section>   
+    
+    <script src="traductor.js"></script>
+
+</body>
+</html>

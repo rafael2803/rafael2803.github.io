@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tituloPagina2">Sobre mí</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/comun.css">
+    <link rel="stylesheet" href="./css/aboutme.css">
+</head>
+<body class="gradient-background">
+  <section>
+      <a href="index.html"><img src="./images/house.svg" height="40px" alt="home"></a>
+      <button class="nav-link languageButton idiom" id="spanishButton" onclick="cambiarIdioma('es'); unseen();"><img src="./images/bandera.png" height="40px" alt="español"/><div class="hideText">spanish</div></button>
+      <button class="nav-link languageButton idiom" id="englishButton" onclick="cambiarIdioma('en'); unseen();"><img src="./images/reino-unido.png" height="38px" alt="english"/><div class="hideText">english</div></button>
+  </section>
+
+  <!--Introducción-->
+  <section>
+    <div class="container col-xxl-8 px-4 py-5 cabecera1">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 imgContainer">
+        <div class="divAtenas col-10 col-sm-8 col-lg-6">
+          <img id="fotoAtenas" src="./images/fotoPortada.jpeg" class="d-block mx-lg-auto img-fluid" alt="foto viajando (Atenas)" width="350" height="200">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 languageContent esp" data-lang="spanish">¡Conóceme!</h1>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 languageContent en" data-lang="english">Get to know me!</h1>
+
+          <p class="lead my-3 languageContent esp" data-lang="spanish">Ingeniero biomédico y desarrollador web recién graduado con residencia en Alicante (España) buscando trabajo remoto. Híbrido o presencial también serían aceptables teniendo en cuenta la distancia desde mi residencia. </p>
+          <p class="lead my-3 languageContent en" data-lang="english">Biomedical engineer and web developer recently graduated with residence in Alicante (Spain) looking for remote work. Hybrid or face-to-face would also be acceptable considering the distance from my residence. </p>
+          <p class="lead my-3 languageContent esp" data-lang="spanish">¿Qué decir sobre mí? Me encanta viajar (por si no había quedado claro con la 
+            foto <img src="./images/eye.png" width="35px" height="35px" alt="icono guiño"/>). También soy
+            un gran fan de Harry Potter y las novelas de ciencia ficción. En los deportes me gusta jugar 
+            al tenis y ver la NBA, Fórmula 1 y MotoGP.  
+          </p>
+          <p class="lead my-3 languageContent en" data-lang="english">What can I say about myself? I love to travel (in case it wasn't clear from the photo
+            <img src="./images/eye.png" width="35px" height="35px" alt="wink icon"/>). I'm also a big fan of Harry Potter and science fiction novels. When it comes 
+            to sports I like to play tennis and watch NBA, Formula 1 and MotoGP.
+          </p>
+          <!--Curriculums-->
+          <p class="lead mb-0"><a href="./EspCV.pdf" target="_blank" rel="noopener noreferrer" class="text-body-emphasis fw-bold languageContent esp" data-lang="spanish">Curriculum <img src="./images/download.svg" alt="descargar curriculum" height="25"></a></p>
+          <p class="lead mb-0"><a href="./EnCV.pdf" target="_blank" rel="noopener noreferrer" class="text-body-emphasis fw-bold languageContent en" data-lang="english">CV <img src="./images/download.svg" alt="download CV" height="25"></a></p>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <!--Habilidades-->
+  <section>
+    <div class="container px-4 py-5 cabecera2" id="icon-grid">
+      <h2 class="pb-2 border-bottom languageContent esp" data-lang="spanish">¿Qué puedo hacer?</h2>
+      <h2 class="pb-2 border-bottom languageContent en" data-lang="english">What can I do?</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <!--Inglés-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/ingles.png" width="50px" height="50px" alt="icono bandera inglesa"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Inglés</h3>
+            <p>Tengo el título C1 otorgado por Cambridge.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">English</h3>
+            <p>I have a C1 level awarded by Cambridge.</p>
+          </div>
+        </div>
+        <!--Front end-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/desarrollo-web.png" width="50px" height="50px" alt="representación front end"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Front end</h3>
+            <p>HTML, CSS, Javascript, React y Bootstrap.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Front end</h3>
+            <p>HTML, CSS, Javascript, React and Bootstrap.</p>
+          </div>
+        </div>
+        <!--Back end-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/back-end.png" width="50px" height="50px" alt="representación back end"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Back end</h3>
+            <p>Express.JS, Node.JS y npm. Además, tengo experienza con el uso de APIs.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Back end</h3>
+            <p>Express.JS, Node.JS and NPM. In addition, I have experience with the use of APIs.</p>
+          </div>
+        </div>
+        <!--Aplicaciones moviles-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/smartphone.png" width="50px" height="50px" alt="desarrollo movil"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Aplicaciones móviles</h3>
+            <p>Desarrollo de aplicaciones móviles mediante Flutter y con Dart.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Mobile Apps</h3>
+            <p>Mobile app development using Flutter and Dart.</p>
+          </div>
+        </div>
+        <!--Bases de datos-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/sql.png" width="50px" height="50px" alt="bases de datos"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Bases de datos</h3>
+            <p>Conozco SQL y tengo experiencia con MySQL y PostgreSQL.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Databases</h3>
+            <p>I know SQL and have experience with MySQL and PostgreSQL.</p>
+          </div>
+        </div>
+        <!--Lenguajes programación-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/codigo.png" width="50px" height="50px" alt="distintons lenguajes de programación"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Lenguajes de programación</h3>
+            <p>Lo que más domino es Javascript y Python, pero también conozco Java y C#.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Programming languages</h3>
+            <p>I am most proficient in Javascript and Python, but I am also familiar with Java and C#.</p>
+          </div>
+        </div>
+        <!--Analisis de datos-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/python.png" width="50px" height="50px" alt="análisis de datos"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Análisis de datos</h3>
+            <p>He utilizado Pandas, Seaborn, PySpark, algoritmos de machine learning, el lenguaje R y Tableau.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Data analysis</h3>
+            <p>I have used Pandas, Seaborn, PySpark, algorithms of machine learning, R programming and Tableau.</p>
+          </div>
+        </div>
+        <!--Videojuegos-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/juegos.png" width="50px" height="50px" alt="creación de video juegos"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Videojuegos</h3>
+            <p>Desarrollé una demo para mi TFG con Unity en el que un sanitario tenía que realizar una cura de una lesión.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Video games</h3>
+            <p>I developed a demo for my Bachelor Thesis with Unity in which a doctor had to cure an injury.</p>
+          </div>
+        </div>
+        <!--Web3 y DApps-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/blockchain.png" width="50px" height="50px" alt="Web 3 o DApps"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">DApps</h3>
+            <p>Creé mi propia aplicación usando el lenguaje Motoko.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">DApps</h3>
+            <p>I created my own application using the Motoko language.</p>
+          </div>
+        </div>
+        <!--Seguridad Web-->
+        <div class="col d-flex align-items-start">
+          <img src="./images/seguridad.png" width="50px" height="50px" alt="seguridad web"/>
+          <div class="languageContent esp" data-lang="spanish">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Seguridad</h3>
+            <p>Autenticación, hash de contraseñas, encriptado de bases de datos.</p>
+          </div>
+          <div class="languageContent en" data-lang="english">
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Security</h3>
+            <p>Authentication, hashing of passwords, encryption of databases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--referencias-->
+  <p class="referencias languageContent esp" data-lang="spanish">Iconos realizados por Freepik de <a href="http://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="text-body-emphasis">www.flaticon.com</a></p>
+  <p class="referencias languageContent en" data-lang="english">Icons made by Freepik from <a href="http://www.flaticon.com" target="_blank" rel="noopener noreferrer" class="text-body-emphasis">www.flaticon.com</a></p>
+  
+  <script src="traductor.js"></script>
+</body>
+</html>

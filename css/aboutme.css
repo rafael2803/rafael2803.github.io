@@ -1,0 +1,34 @@
+#fotoAtenas{
+    border-radius: 10%;
+}
+.referencias{
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .cabecera1{
+        padding-bottom: 0 !important;
+    }
+    .cabecera2{
+        padding-top: 0 !important;
+    }
+    .imgContainer{
+        display:flex;
+    }
+    .divAtenas{
+        display: contents;
+    }
+    #fotoAtenas{
+        border-radius: 10%;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    p{
+        padding-top: 5px;
+    }
+    h1, h2{
+        text-align: center;
+    }
+}

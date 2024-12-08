@@ -1,0 +1,36 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: auto;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img{
+    padding: 5px;
+}
+
+/*Cambio de idiomas
+Por defecto, el idioma será español*/
+.en{
+    display: none;
+}
+/*Para poner el idioma a la derecha*/
+.idiom{
+    float:right;
+    border-radius: 50%;
+}
+.hideText{
+    display: none;
+}

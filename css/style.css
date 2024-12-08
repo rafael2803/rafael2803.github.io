@@ -1,0 +1,22 @@
+.gradient-background {
+  height: 100vh;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 200px;
+}
+#opciones{
+  display: block;
+}
+#miNombre{
+  white-space: nowrap;
+  font-size: 1.20em;;
+}
+.iconoEnlace{
+  padding: 1px !important;
+  position: relative;
+  top: -2px;
+}
+.colorLetra{
+  color: white;
+}
